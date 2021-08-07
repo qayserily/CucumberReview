@@ -1,4 +1,5 @@
 package com.vytrack.runner;
+// BREAK UNTIL 11:10
 
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
@@ -15,8 +16,7 @@ import org.junit.runner.RunWith;
  */
 
 @CucumberOptions(features = "src/test/resources/features" ,
-        glue = "com/vytrack/step_definitions")
-
-
+                glue = "com/vytrack/step_definitions",
+                dryRun = true)
 public class CukesRunner {
 }
